@@ -27,17 +27,17 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.header_logo_box {
+.header__logo_box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3rem;
 }
 
-.header_text_box {
+.header__text_box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -53,7 +53,7 @@ body {
     backface-visibility: hidden;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -61,7 +61,7 @@ body {
     animation: moveInLeft 1s;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -99,7 +99,7 @@ body {
     box-shadow: .5rem .7rem 1.5rem -.1rem rgba(0,0,0,0.5);
 }
 
-.btn-white {
+.btn--white {
     border: .1rem solid white;
     border-radius: 10rem;
 }
