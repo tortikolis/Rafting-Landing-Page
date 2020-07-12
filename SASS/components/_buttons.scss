@@ -1,0 +1,57 @@
+.btn {
+    &:link,
+    &:visited {
+        display: inline-block;
+        position: relative;
+        color: $color-grey-dark;
+        background-color: $color-white;
+        text-decoration: $color-white;
+        text-transform: uppercase;
+        font-size: $default-font-size;
+        padding: 1.5rem 4rem;
+        margin-top: 2rem;
+        transition: all .2s;
+    }
+    
+
+    &:hover {
+        transform: translateY(-.4rem); 
+        -webkit-box-shadow: 1rem 1.4rem 3.1rem -.2rem rgba($color-black, 0.5);
+        -moz-box-shadow: 1rem 1.4rem 3.1rem -.2rem rgba($color-black,0.5);
+        box-shadow: 1rem 1.4rem 3.1rem -.2rem rgba($color-black,0.5); 
+
+        &::after {
+            transform: scale(1.5, 1.5);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(0);
+        -webkit-box-shadow: .5rem .7rem 1.5rem -.1rem rgba($color-black,0.5);
+        -moz-box-shadow: .5rem .7rem 1.5rem -.1rem rgba($color-black,0.5);
+        box-shadow: .5rem .7rem 1.5rem -.1rem rgba($color-black,0.5);
+    }
+
+    &--white {
+        border: .1rem solid $color-white;
+        border-radius: 10rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 10rem;
+        background-color: $color-white;
+        transition: all .4s;
+    }
+
+    &--animated {
+        animation: moveInUp ease-out .5s .75s backwards;
+    }
+}
